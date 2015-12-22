@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="CoolType.TypingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CoolType"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="listBlock" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Please select a text file to begin." VerticalAlignment="Top" Height="150" Width="200"/>
+        <Button x:Name="listBtn" Visibility="Visible" Content="Select a file" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Top" Click="listBtn_Click"/>
+        <TextBox x:Name="listBox" Visibility="Collapsed" HorizontalAlignment="Center" Margin="0,292,0,0" TextWrapping="Wrap" Text="Type here and press next to check the word. Click bellow to start game!" VerticalAlignment="Top" Height="150" Width="200"/>
+        <Button x:Name="boxBtn" Content="Start Game" Visibility="Collapsed" HorizontalAlignment="Center" Margin="0,460,0,0" VerticalAlignment="Top" Click="boxBtn_Click"/>
+        <TextBlock x:Name="test" HorizontalAlignment="Center" Margin="151,267,147,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
